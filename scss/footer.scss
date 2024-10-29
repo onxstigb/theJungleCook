@@ -1,0 +1,49 @@
+footer {
+  position: relative;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  span {
+    font-style: italic;
+  }
+
+  .links {
+    justify-content: space-evenly;
+    color: $site-black;
+    text-decoration: none;
+  }
+
+  .icons {
+    display: flex;
+
+    .fb {
+      //   background-color: red;
+      margin-right: 40.4px;
+      height: 19px;
+      width: 19px;
+
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 19px;
+        width: 19px;
+      }
+    }
+    .insta {
+      //   background-color: red;
+      height: 19px;
+      width: 19px;
+
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 19px;
+        width: 19px;
+      }
+    }
+  }
+}
