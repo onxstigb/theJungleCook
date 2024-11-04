@@ -19,3 +19,4 @@ This is the beginning of my Jungle Cook README
 - Messed up. Site somehow broken. Nav bar got destroyed and messing with the rest of the site.
 
 Homework 6 Web4:
+https://in-info-web4.luddy.indianapolis.iu.edu/~obrookin/AdvWeb/homework6/
