@@ -11,3 +11,7 @@ This is the beginning of my homework 6 README
 
 - Created footer
 - Finished login page formatting needs font correction
+
+### 11/03/24
+
+- Able to change by url
