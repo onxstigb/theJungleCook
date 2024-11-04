@@ -1,0 +1,42 @@
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 0;
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1.6rem;
+
+    .logo {
+      font-size: 25px;
+      //   font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      flex-grow: 1;
+
+      ul {
+        list-style: none;
+      }
+      .nav--ul__one {
+        margin: 0 auto;
+        display: flex;
+        gap: 1.6rem;
+      }
+      .nav--ul__two {
+        display: flex;
+        gap: 1.6rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}

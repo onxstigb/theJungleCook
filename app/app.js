@@ -1,3 +1,5 @@
+import { changePage } from "../model/model.js";
+
 function initListeners() {}
 
 function route() {

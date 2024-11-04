@@ -12,63 +12,33 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#browse">Browse</a>
-      <a href="#create">Create Recipe</a>
-      <a href="#yourrecipe">Your Recipes</a>
-      <a href="login">Login</a>
-    </nav>
+    <header>
+      <div class="nav-container">
+        <div class="logo">The JungleCook</div>
+        <nav class="nav">
+          <ul class="nav--ul__one">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#browse">Browse</a></li>
+            <li><a href="#create">Create Recipe</a></li>
+          </ul>
+          <ul class="nav--ul__two">
+            <li><a href="#login">Login</a></li>
+            <li><a href="#recipes">Your Recipes</a></li>
+          </ul>
+        </nav>
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+    </header>
 
     <div id="app">
-      <div class="account">
-        <div class="login">
-          <h1>Login Here!</h1>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Email Adress:"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password:"
-          />
-          <button class="login-btn">LOGIN</button>
-        </div>
-
-        <div class="signup">
-          <p>don't have an account?</p>
-          <h1>Sign up!</h1>
-
-          <input
-            type="text"
-            name="fname"
-            id="fname"
-            placeholder="First Name:"
-          />
-          <input type="text" name="lname" id="lname" placeholder="Last Name:" />
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Email Adress:"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password:"
-          />
-
-          <button class="signup-btn">SIGN UP</button>
-        </div>
-      </div>
+      <div class="home"></div>
     </div>
 
     <footer>

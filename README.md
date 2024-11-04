@@ -15,3 +15,4 @@ This is the beginning of my homework 6 README
 ### 11/03/24
 
 - Able to change by url
+- Navigation in progress
