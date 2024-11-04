@@ -1,6 +1,6 @@
-# Homework 6
+# Jungle Cook
 
-This is the beginning of my homework 6 README
+This is the beginning of my Jungle Cook README
 
 ### 10/28/24
 
@@ -16,3 +16,6 @@ This is the beginning of my homework 6 README
 
 - Able to change by url
 - Navigation in progress
+- Messed up. Site somehow broken. Nav bar got destroyed and messing with the rest of the site.
+
+Homework 6 Web4:

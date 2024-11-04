@@ -1,6 +1,21 @@
 import { changePage } from "../model/model.js";
 
-function initListeners() {}
+const hambergerMenu = document.querySelector(".hamburger-menu");
+
+const nav = document.querySelector(".nav");
+
+hambergerMenu.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+function initListeners() {
+  $("nav a").on("click", function (e) {
+    let id = e.currentTarget.id;
+    console.log(id);
+    $("app").html(id);
+    nav.classList.toggle("active");
+  });
+}
 
 function route() {
   let hashTag = window.location.hash;
