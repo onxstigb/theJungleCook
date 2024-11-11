@@ -40,16 +40,12 @@ header .nav-container .logo {
 header .nav-container .nav {
   display: flex;
   flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 header .nav-container .nav ul {
   list-style: none;
-}
-header .nav-container .nav .nav--ul__one {
-  margin: 0 auto;
-  display: flex;
-  gap: 1.6rem;
-}
-header .nav-container .nav .nav--ul__two {
   display: flex;
   gap: 1.6rem;
 }
@@ -84,7 +80,7 @@ header .nav-container .hamburger-menu {
     text-align: center;
     background-color: burlywood;
     color: #fff;
-    transition: 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
   }
   .nav-container .nav .nav--ul__one {
     flex-direction: column;
@@ -94,12 +90,35 @@ header .nav-container .hamburger-menu {
     flex-direction: column;
     gap: 0.6rem;
   }
-  .nav-container .nav .nav.active {
+  .nav-container .nav.active {
     right: 0;
+    z-index: 3;
   }
   .nav-container .hamburger-menu {
     display: block;
-    z-index: 2;
+    z-index: 4;
+  }
+}
+@media (min-width: 701px) {
+  .nav-container .hamburger-menu {
+    display: none;
+  }
+  .nav-container .nav {
+    position: static;
+    top: auto;
+    right: auto;
+    flex-direction: row;
+    gap: 1.6rem;
+    background-color: transparent;
+    padding-top: 0;
+    align-items: center;
+    text-align: left;
+    transition: none;
+  }
+  .nav-container .nav .nav--ul__one,
+  .nav-container .nav .nav--ul__two {
+    flex-direction: row;
+    gap: 1.6rem;
   }
 }
 footer {

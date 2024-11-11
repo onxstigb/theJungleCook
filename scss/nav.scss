@@ -1,6 +1,6 @@
 header {
-  background-color: #000;
-  color: #fff;
+  background-color: $background-color;
+  color: $text-color;
   padding: 0.5rem 0;
 
   .nav-container {
@@ -13,22 +13,17 @@ header {
 
     .logo {
       font-size: 25px;
-      //   font-weight: bold;
     }
 
     .nav {
       display: flex;
       flex-grow: 1;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
 
       ul {
         list-style: none;
-      }
-      .nav--ul__one {
-        margin: 0 auto;
-        display: flex;
-        gap: 1.6rem;
-      }
-      .nav--ul__two {
         display: flex;
         gap: 1.6rem;
       }
@@ -38,6 +33,7 @@ header {
         color: inherit;
       }
     }
+
     .hamburger-menu {
       display: none;
       cursor: pointer;
@@ -47,13 +43,14 @@ header {
 
 @media (max-width: 700px) {
   .nav-container {
-    // overflow-x: hidden;
     font-size: 20px;
     z-index: 2;
+
     .logo {
       font-size: 20px;
       z-index: 2;
     }
+
     .nav {
       flex-direction: column;
       gap: 2rem;
@@ -65,25 +62,61 @@ header {
       padding-top: 6rem;
       align-items: center;
       text-align: center;
-      background-color: burlywood;
-      color: #fff;
-      transition: 0.3s ease-in-out;
+      background-color: $hamburger-bg;
+      color: $text-color;
+      transition: right $transition-time ease-in-out;
 
       .nav--ul__one {
         flex-direction: column;
         gap: 0.6rem;
       }
+
       .nav--ul__two {
         flex-direction: column;
         gap: 0.6rem;
       }
-      .nav.active {
+
+      &.active {
         right: 0;
+        z-index: 3;
       }
     }
+
     .hamburger-menu {
       display: block;
-      z-index: 2;
+      z-index: 4;
+    }
+  }
+}
+
+// Large screen styles (above 700px)
+@media (min-width: 701px) {
+  .nav-container {
+    // Ensure the hamburger menu is hidden on larger screens
+    .hamburger-menu {
+      display: none;
+    }
+
+    // The nav should be horizontal and fully visible on larger screens
+    .nav {
+      position: static; // Reset position for large screens
+      top: auto;
+      right: auto;
+      flex-direction: row; // Horizontal direction
+      gap: 1.6rem;
+      background-color: transparent; // Remove background color for large screens
+      padding-top: 0;
+      align-items: center;
+      text-align: left;
+
+      .nav--ul__one,
+      .nav--ul__two {
+        flex-direction: row; // Ensure the list items are horizontal
+        gap: 1.6rem; // Horizontal gap between items
+      }
+
+      // Reset the transition for large screens, as it's not needed
+      transition: none;
     }
   }
 }

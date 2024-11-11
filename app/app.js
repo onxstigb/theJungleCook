@@ -1,10 +1,9 @@
 import { changePage } from "../model/model.js";
 
-const hambergerMenu = document.querySelector(".hamburger-menu");
-
+const hamburgerMenu = document.querySelector(".hamburger-menu");
 const nav = document.querySelector(".nav");
 
-hambergerMenu.addEventListener("click", () => {
+hamburgerMenu.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
