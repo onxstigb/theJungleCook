@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^11.0.1",
     "sass": "^1.80.4"
   }
 }
