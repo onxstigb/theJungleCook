@@ -20,3 +20,8 @@ This is the beginning of my Jungle Cook README
 
 Homework 6 Web4:
 https://in-info-web4.luddy.indianapolis.iu.edu/~obrookin/AdvWeb/homework6/
+
+### 11/10/24
+
+- Attempts to fix Navigation
+- Working on adding FireBase
