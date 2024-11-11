@@ -25,3 +25,7 @@ https://in-info-web4.luddy.indianapolis.iu.edu/~obrookin/AdvWeb/homework6/
 
 - Attempts to fix Navigation
 - Working on adding FireBase
+
+-- Getting chrome extension error??
+-- Also getting chrome security issue errors??
+Not letting me test firebase and I am very unsure what to do. What can I do?
