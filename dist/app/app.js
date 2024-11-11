@@ -1,4 +1,4 @@
-import { changePage } from "../model/model.js";
+import { changePage } from "../../model/model.js";
 
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const nav = document.querySelector(".nav");
