@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "live-server dist",
     "build-webpack": "webpack",
-    "compile-sass": "sass scss/styles.scss css/styles.css -w --no-source-map"
+    "compile-sass": "sass dist/scss/styles.scss dist/css/styles.css -w --no-source-map"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +17,7 @@
   "dependencies": {
     "firebase": "^11.0.1",
     "jquery": "^3.7.1",
-    "sass": "^1.80.4"
-  },
-  "devDependencies": {
+    "sass": "^1.80.4",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
   }

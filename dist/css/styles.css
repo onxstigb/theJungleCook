@@ -22,7 +22,6 @@ p {
 }
 
 header {
-  background-color: #000;
   color: #fff;
   padding: 0.5rem 0;
 }
@@ -140,6 +139,7 @@ footer .icons {
   display: flex;
 }
 footer .icons .fb {
+  background-color: red;
   margin-right: 40.4px;
   height: 19px;
   width: 19px;
